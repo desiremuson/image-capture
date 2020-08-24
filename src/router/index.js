@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import ViewImages from '../views/ViewImages'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/',
+    path: '/h',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/images',
+    name: 'viewImages',
+    component: ViewImages
   },
   {
     path: '/about',
